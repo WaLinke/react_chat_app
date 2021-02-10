@@ -1,0 +1,10 @@
+.register-main-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 46px;
+  max-width: 700px;
+  text-align: center;
+  letter-spacing: -0.75px;
+  color: rgb(75, 75, 75);
+  margin-bottom: 60px;
+}
