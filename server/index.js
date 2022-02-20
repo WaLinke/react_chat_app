@@ -11,7 +11,7 @@ dotenv.config();
 const server = http.createServer(app);
 const io = socketio(server, {
   cors: {
-    origins: ["localhost:3000"],
+    origins: ["192.168.0.54:3000"],
     methods: ["GET", "POST"],
   },
 });

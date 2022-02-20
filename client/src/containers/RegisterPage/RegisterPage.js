@@ -5,7 +5,7 @@ import "./RegisterPage.css";
 import chatioIcon from "../../icons/chat-io-icon.jpg";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "http://192.168.0.54:5000";
 
 const RegisterPage = (props) => {
   const history = useHistory();

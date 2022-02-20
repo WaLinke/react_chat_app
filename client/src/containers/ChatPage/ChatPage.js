@@ -17,7 +17,7 @@ const Chat = (props) => {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
   const [allUsers, setAllUsers] = useState([]);
-  const ENDPOINT = "localhost:5000";
+  const ENDPOINT = "192.168.0.54:5000";
 
   useEffect(() => {
     socket = io(ENDPOINT);
@@ -67,6 +67,7 @@ const Chat = (props) => {
 
     localStorage.removeItem("x-access-token");
     localStorage.removeItem("user-id");
+    localStorage.removeItem("username");
     props.setIsConnected(false);
     history.push("/connexion");
   };
